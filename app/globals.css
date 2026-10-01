@@ -47,3 +47,124 @@ a {
     color-scheme: dark;
   }
 }
+.accounting-page {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+} /* 設定記帳頁面的寬度、置中、內距和外框 */
+.accounting-page h1 {
+  margin-bottom: 24px;
+  color: #243447;
+} /* 設定標題下方間距和文字顏色 */
+
+.accounting-page form {
+  display: flex;
+  flex-direction: row; /* 讓選單、輸入框和按鈕水平排列 */
+  align-items: center; /* 讓表單元件垂直置中 */
+  flex-wrap: wrap; /* 螢幕太窄時允許換行 */
+  gap: 8px; /* 設定元件之間的間距 */
+} /* 設定上方表單的排列方式 */
+
+.accounting-page input,
+.accounting-page select,
+.accounting-page button {
+  padding: 8px;
+  font-size: 14px;
+  font-family: inherit; /* 讓輸入框、選單和按鈕繼承記帳頁面的字體 */
+} /* 統一輸入框、選單和按鈕的大小 */
+.accounting-page ul {
+  width: 534px; /* 讓列表寬度對齊上方表單元件群組 */
+  max-width: 100%; /* 避免小螢幕出現水平溢出 */
+  padding-left: 0;
+  margin-top: 24px;
+} /* 設定列表的縮排和上方間距 */
+
+.accounting-page li {
+  width: 100%; /* 讓每一列使用完整列表寬度 */
+  display: grid;
+  grid-template-columns: 80px 1fr auto; /* 金額、項目、刪除按鈕三欄 */
+  column-gap: 8px; /* 讓金額和項目文字靠近 */
+  align-items: center;
+  margin-bottom: 12px;
+} /* 讓每筆紀錄和刪除按鈕分開排列 */
+
+.accounting-page li button {
+  margin-left: 0;
+  padding: 4px 8px;
+  font-size: 14px;
+  margin-right: 10px; /* 讓刪除按鈕往左移動 */
+} /* 設定刪除按鈕的大小和左側間距 */
+
+.accounting-page .expense {
+  color: #b00020; /* 支出使用紅色 */
+  margin-right: 80px; /* 金額和項目之間保留距離 */
+}
+
+.accounting-page .income {
+  color: #008000; /* 收入使用綠色 */
+  margin-right: 80px; /* 金額和項目之間保留距離 */
+}
+
+.accounting-page p {
+  margin-top: 16px;
+} /* 設定說明文字和小計的上方間距 */
+.accounting-page form br {
+  display: none; /* 隱藏原本的換行標籤，避免表單被分成多行 */
+}
+.accounting-page {
+  max-width: 700px; /* 增加記帳頁面的可用寬度 */
+  min-height: 700px; /* 讓外框延伸到接近參考圖的高度 */
+  font-family: "Microsoft JhengHei", Arial, sans-serif; 
+  display: flex;
+  flex-direction: column; /* 讓表單、列表和小計垂直排列 */
+  align-items: center; /* 讓中間內容水平置中 */
+}
+
+.accounting-page form {
+  width: 100%; /* 讓表單區域使用外框的內容寬度 */
+  padding-bottom: 16px; /* 讓表單和分隔線保留距離 */
+  position: relative; /* 讓分隔線可以獨立定位 */
+  justify-content: center; /* 讓支出、輸入框和新增按鈕水平置中 */
+  flex-wrap: nowrap; /* 讓表單元件保持在同一行 */
+}
+
+.accounting-page form::after {
+  content: "";
+  position: absolute;
+  left: -24px;
+  right: -24px;
+  bottom: 0;
+  border-bottom: 1px solid #eeeeee; /* 讓分隔線延伸到外框左右邊緣 */
+}
+
+.accounting-page input[type="number"] {
+  width: 110px; /* 設定金額輸入框寬度 */
+}
+
+.accounting-page input[type="text"] {
+  width: 220px; /* 設定項目輸入框寬度 */
+}
+.accounting-page select {
+  width: 80px; /* 設定支出／收入選單寬度 */
+}
+.accounting-page form button {
+  width: 100px; /* 設定新增紀錄按鈕寬度 */
+}
+
+.accounting-page .home-link {
+  display: inline-block;
+  margin-top: 24px; /* 和小計保留距離 */
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  background-color: #efefef; /* 設定和新增紀錄按鈕接近的底色 */
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer; /* 滑鼠移過去時顯示可點擊 */
+} /* 設定返回首頁按鈕樣式 */
+.accounting-page .home-link:hover {
+  background-color: #dcdcdc; /* 滑鼠移過去時變色 */
+}

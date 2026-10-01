@@ -148,3 +148,53 @@ a.secondary {
   padding: 0.1em 0.4em;
   border-radius: 6px;
 }
+
+.home {
+  width: 680px;
+  min-height: 660px;
+  margin: 18px auto;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #243447;
+  font-family: "Microsoft JhengHei", Arial, sans-serif;
+} /* 設定首頁外框 */
+
+.header {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #243447;
+  color: #ffffff;
+} /* 設定深藍色標題區 */
+
+.header h1 {
+  font-size: 26px;
+} /* 設定首頁標題文字大小 */
+
+.welcome {
+  height: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cbddef;
+  font-size: 21px;
+} /* 設定淺藍色歡迎區 */
+
+.start {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+} /* 設定開始按鈕區 */
+
+.start a {
+  padding: 7px 10px;
+  border: 1px solid #dddddd;
+  background-color: #eeeeee;
+  color: #243447;
+  font-size: 14px;
+} /* 設定點此開始按鈕 */
+
+.start a:hover {
+  background-color: #dddddd; /* 滑鼠移過按鈕時變色 */
+}
