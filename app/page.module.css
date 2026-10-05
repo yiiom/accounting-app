@@ -198,3 +198,44 @@ a.secondary {
 .start a:hover {
   background-color: #dddddd; /* 滑鼠移過按鈕時變色 */
 }
+.authSection {
+  text-align: center; /* 讓區塊內的文字與行內元素置中 */
+  margin-top: 40px; /* 與上方標題列保持距離 */
+}
+.authSection h2 {
+  font-size: 20px; /* 登入與註冊標題大小 */
+  margin-bottom: 20px; /* 標題與表單之間的距離 */
+}
+.authSection button[type="submit"] {
+  display: inline-block;
+  margin-top: 10px; /* 與輸入框保留距離 */
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  background-color: #efefef; /* 與返回首頁按鈕相同底色 */
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.authSection button[type="submit"]:hover {
+  background-color: #dcdcdc; /* 滑鼠移過時變色 */
+}
+.startButton {
+  display: inline-block;
+  margin-top: 8px; /* 與會員信箱留出距離 */
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  background-color: #efefef; /* 灰色按鈕底色 */
+  color: inherit;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none; /* 移除連結底線 */
+  vertical-align: middle;
+}
+
+.startButton:hover {
+  background-color: #dcdcdc;
+}

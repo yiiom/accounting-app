@@ -1,7 +1,7 @@
 "use client";
 
 type Transaction = {
-  id: number;
+  id: string;
   type: string;
   amount: number;
   description: string;
@@ -9,7 +9,7 @@ type Transaction = {
 
 type ListProps = {
   transactions: Transaction[];
-  onDelete: (id: number) => void;
+  onDelete: (id: string) => void;
 };
 
 export default function List({ transactions, onDelete }: ListProps) {
